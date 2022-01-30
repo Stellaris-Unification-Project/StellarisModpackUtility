@@ -14,6 +14,7 @@ def getFiles(directory):
     #     print(f)
     return file_list,descriptor_list
 
+blackList = open('blackList.txt','r').readlines()
 whiteList = open('whiteList.txt','r').readlines()
 
 files,descriptors = getFiles(directory)
